@@ -1,4 +1,11 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
+import 'slim-select/dist/slimselect.min.css';
+import SlimSelect from 'slim-select';
+
+// Ініціалізуйте Slim Select
+new SlimSelect({
+  select: '.breed-select', // Вказуйте селектор вашого елемента select
+});
 
 const breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
