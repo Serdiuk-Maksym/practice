@@ -2,11 +2,6 @@ import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 import 'slim-select/dist/slimselect.css';
 import SlimSelect from 'slim-select';
 
-// Ініціалізуйте Slim Select
-new SlimSelect({
-  select: document.querySelector('.breed-select'), // Вказуйте селектор вашого елемента select
-});
-
 const breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
 const catInfo = document.querySelector('.cat-info');
@@ -75,5 +70,4 @@ fetchBreeds()
   .catch(error => {
     const errorElement = document.querySelector('.error');
     errorElement.style.display = 'block';
-    console.error(error);
-  });
+    console.error
