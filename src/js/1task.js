@@ -4,7 +4,7 @@ import SlimSelect from 'slim-select';
 
 // Ініціалізуйте Slim Select
 new SlimSelect({
-  select: '.breed-select', // Вказуйте селектор вашого елемента select
+  select: document.querySelector('.breed-select'), // Вказуйте селектор вашого елемента select
 });
 
 const breedSelect = document.querySelector('.breed-select');
