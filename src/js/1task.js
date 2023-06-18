@@ -43,12 +43,12 @@ fetchBreeds()
 
           const image = document.createElement('img');
           image.src = cat.url;
-          description.classList.add('cat_img');
+          image.classList.add('cat_img');
           catInfo.appendChild(image);
 
           const breedName = document.createElement('p');
           breedName.textContent = `Breed: ${cat.breeds[0].name}`;
-          description.classList.add('breed');
+          breedName.classList.add('breed');
           catInfo.appendChild(breedName);
 
           const description = document.createElement('p');
@@ -58,7 +58,7 @@ fetchBreeds()
 
           const temperament = document.createElement('p');
           temperament.textContent = `Temperament: ${cat.breeds[0].temperament}`;
-          description.classList.add('temperament');
+          temperament.classList.add('temperament');
           catInfo.appendChild(temperament);
 
           // Приховати p.loader, показати div.cat-info
