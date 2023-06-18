@@ -1,0 +1,28 @@
+:root {
+  background-color: aqua;
+}
+
+ul {
+  padding: 0 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
