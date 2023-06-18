@@ -41,20 +41,25 @@ fetchBreeds()
           image.classList.add('cat_img');
           catInfo.appendChild(image);
 
+          const breedInfo = document.createElement('div');
+          breedInfo.classList.add('breed-info');
+
           const breedName = document.createElement('p');
           breedName.textContent = `Breed: ${cat.breeds[0].name}`;
           breedName.classList.add('breed');
-          catInfo.appendChild(breedName);
+          breedInfo.appendChild(breedName);
 
           const description = document.createElement('p');
           description.textContent = `Description: ${cat.breeds[0].description}`;
           description.classList.add('description');
-          catInfo.appendChild(description);
+          breedInfo.appendChild(description);
 
           const temperament = document.createElement('p');
           temperament.textContent = `Temperament: ${cat.breeds[0].temperament}`;
           temperament.classList.add('temperament');
-          catInfo.appendChild(temperament);
+          breedInfo.appendChild(temperament);
+
+          catInfo.appendChild(breedInfo);
 
           // Приховати p.loader, показати div.cat-info
           catInfo.style.display = 'block';
