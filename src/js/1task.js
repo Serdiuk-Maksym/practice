@@ -55,7 +55,7 @@ fetchBreeds()
           catInfo.appendChild(temperament);
 
           // Приховати p.loader, показати div.cat-info
-          catInfo.style.display = 'flex';
+          catInfo.style.display = 'block';
           loader.style.display = 'none';
         })
         .catch(error => {
