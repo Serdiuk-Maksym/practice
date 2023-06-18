@@ -1,5 +1,5 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
-import 'slim-select/dist/slimselect.min.css';
+import 'slim-select/dist/slimselect.css';
 import SlimSelect from 'slim-select';
 
 // Ініціалізуйте Slim Select
