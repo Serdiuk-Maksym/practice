@@ -1,10 +1,15 @@
 :root {
-  background-color: aqua;
+  background-color: #e2e2e2;
 }
 
 ul {
   padding: 0 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
@@ -20,9 +25,47 @@ ul {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #fd9222;
+}
+
+.title_span {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  color: black;
 }
 
 .list {
   display: flex;
   justify-content: center;
+}
+
+.link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: black;
 }
