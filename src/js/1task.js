@@ -70,4 +70,5 @@ fetchBreeds()
   .catch(error => {
     const errorElement = document.querySelector('.error');
     errorElement.style.display = 'block';
-    console.error
+    console.error();
+  });
